@@ -1,8 +1,14 @@
 {
   "functions": {
     "api/index.py": {
-      "includeFiles": "models/**|src/**|artifacts/**|app/**",
-      "excludeFiles": "data/**|tests/**|*.csv|*.md"
+      "includeFiles": "models/**|src/**|artifacts/**|app/**|data/amr_history.db",
+      "excludeFiles": "tests/**|*.csv|*.md"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    }
+  ]
 }
