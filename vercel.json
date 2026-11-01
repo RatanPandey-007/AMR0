@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "models/**|src/**|artifacts/**|app/**",
+      "excludeFiles": "data/**|tests/**|*.csv|*.md"
+    }
+  }
+}
