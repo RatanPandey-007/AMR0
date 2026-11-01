@@ -11,12 +11,10 @@
     "api/index.py": {
       "includeFiles": "models/**|src/**|artifacts/**|app/**|data/amr_history.db",
       "excludeFiles": "tests/**|*.csv|*.md"
+    },
+    "app/main.py": {
+      "includeFiles": "models/**|src/**|artifacts/**|app/**|data/amr_history.db",
+      "excludeFiles": "tests/**|*.csv|*.md"
     }
-  },
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/index.py"
-    }
-  ]
+  }
 }
